@@ -1,0 +1,8 @@
+[
+  {
+    "url": [ "https://github.com/unicode-org/icu/archive/refs/tags/release-66-1.zip" ],
+    "md5": "6eafd0d144a317cce8180d005491ad98",
+    "src": "icu/66.1",
+    "dst": "icu-release-66-1/icu4c/source"
+  }
+]
