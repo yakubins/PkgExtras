@@ -4,5 +4,11 @@
     "md5": "6eafd0d144a317cce8180d005491ad98",
     "src": "icu/66.1",
     "dst": "icu-release-66-1/icu4c/source"
+  },
+  {
+    "url":[ "https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz" ],
+    "md5": "ebcf09bed9f14d7fa188d3bd57349522",
+    "src": "jbigkit/2.1",
+    "dst": ""
   }
 ]
