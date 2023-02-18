@@ -11,7 +11,7 @@ set(gif_HEADERS
   gif_hash.h
   gif_lib_private.h
   )
- 
+
 set(gif_SOURCES
   dgif_lib.c
   egif_lib.c
@@ -33,6 +33,8 @@ target_include_directories(gif PUBLIC "$<BUILD_INTERFACE:${gif_INCLUDES}>")
 set_target_properties(gif PROPERTIES PUBLIC_HEADER ${gif_PUBLIC_HEADERS})
 set_target_properties(gif PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
 set_property(TARGET gif PROPERTY POSITION_INDEPENDENT_CODE ON)
+
+add_library(GIF::GIF ALIAS gif)
 
 set(util_HEADERS
   getarg.h
