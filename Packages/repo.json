@@ -10,5 +10,10 @@
     "md5": "ebcf09bed9f14d7fa188d3bd57349522",
     "src": "jbigkit/2.1",
     "dst": ""
+  },
+  {
+    "md5": "6f03aee4ebe54ac2cc1ab3e4b0a049e5",
+    "src": "giflib/5.2.1",
+    "dst": ""
   }
 ]
