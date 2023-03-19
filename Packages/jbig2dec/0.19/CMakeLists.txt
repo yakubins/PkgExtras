@@ -114,7 +114,6 @@ set(jbig2dec_DEFINITIONS
 
 if (HAVE_LIBPNG)
   list(APPEND jbig2dec_SOURCES jbig2_image_png.c)
-  list(APPEND jbig2dec_DEFINITIONS PNG_USE_DLL)
   list(APPEND jbig2dec_LIBRARIES PNG::PNG)
 endif ()
 
