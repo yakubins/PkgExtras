@@ -15,5 +15,11 @@
     "md5": "6f03aee4ebe54ac2cc1ab3e4b0a049e5",
     "src": "giflib/5.2.1",
     "dst": ""
+  },
+  {
+    "url":[ "https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.zip" ],
+    "md5": "c1c1f36fdb691979d092d51679ba082e",
+    "src": "jbig2dec/0.19",
+    "dst": ""
   }
 ]
