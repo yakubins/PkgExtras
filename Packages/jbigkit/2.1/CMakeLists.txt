@@ -10,7 +10,7 @@ else ()
   set(jbigkit_BUILD_TYPE SHARED)
 endif ()
 
-option(jbigkit_USE_INSTALL_SUFFIXE "Use additional subdirectory for public headers" ON)
+option(jbigkit_USE_INSTALL_SUFFIXE "Use additional subdirectory for public headers" OFF)
 set(jbigkit_PUBLIC_HEADER_DIR "${CMAKE_INSTALL_INCLUDEDIR}")
 if (jbigkit_USE_INSTALL_SUFFIXE)
   set(jbigkit_PUBLIC_HEADER_DIR "${jbigkit_PUBLIC_HEADER_DIR}/jbigkit")
