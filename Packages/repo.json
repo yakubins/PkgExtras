@@ -21,5 +21,11 @@
     "md5": "c1c1f36fdb691979d092d51679ba082e",
     "src": "jbig2dec/0.19",
     "dst": ""
+  },
+  {
+    "url":[ "https://github.com/agl/jbig2enc/archive/refs/tags/0.29.zip" ],
+    "md5": "8144ef2ed6d434ec048d94f91acaa992",
+    "src": "jbig2enc/0.29",
+    "dst": ""
   }
 ]
