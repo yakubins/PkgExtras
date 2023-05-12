@@ -35,7 +35,7 @@ mark_as_advanced(WebP_INCLUDE_DIR WebP_LIBRARY)
 if (WEBP_FOUND OR WebP_FOUND)
   set(WebP_FOUND 1)
   set(WebP_INCLUDE_DIRS ${WebP_INCLUDE_DIR})
-  set(WebP_LIBRARIES ${WebP_LIBRARY})
+  set(WebP_LIBRARIES "${WebP_LIBRARY}")
 endif()
 
 if (WebP_FOUND AND NOT TARGET WebP::WebP)
