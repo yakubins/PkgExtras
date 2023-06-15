@@ -4,7 +4,7 @@ if (TARGET WebP::WebP)
   return ()
 endif ()
 
-if (WebP_INCLUDE_DIR AND WebP_LIBRARY)
+if (WebP_INCLUDE_DIR AND WebP_webp_LIBRARY AND WebP_webpdecoder_LIBRARY AND WebP_webpmux_LIBRARY AND WebP_webpdemux_LIBRARY)
   set(WebP_FIND_QUIETLY TRUE)
 endif ()
 
@@ -20,26 +20,59 @@ find_path(WebP_INCLUDE_DIR
     ${PC_WebP_INCLUDE_DIR}
   )
 
-find_library(WebP_LIBRARY
+find_library(WebP_webp_LIBRARY
   NAMES webp
   PATHS
     ${PC_WebP_LIBDIR}
     ${PC_WebP_LIBRARIES_DIRS}
   )
 
-include(FindPackageHandleStandardArgs)
-FIND_PACKAGE_HANDLE_STANDARD_ARGS(WebP DEFAULT_MSG WebP_INCLUDE_DIR WebP_LIBRARY)
+find_library(WebP_webpdecoder_LIBRARY
+  NAMES webpdecoder
+  PATHS
+    ${PC_WebP_LIBDIR}
+    ${PC_WebP_LIBRARIES_DIRS}
+  )
 
-mark_as_advanced(WebP_INCLUDE_DIR WebP_LIBRARY)
+find_library(WebP_webpmux_LIBRARY
+  NAMES webpdemux
+  PATHS
+    ${PC_WebP_LIBDIR}
+    ${PC_WebP_LIBRARIES_DIRS}
+  )
+
+find_library(WebP_webpdemux_LIBRARY
+  NAMES webpdemux
+  PATHS
+    ${PC_WebP_LIBDIR}
+    ${PC_WebP_LIBRARIES_DIRS}
+  )
+
+include(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(WebP DEFAULT_MSG
+  WebP_INCLUDE_DIR
+  WebP_webp_LIBRARY
+  WebP_webpdecoder_LIBRARY
+  WebP_webpmux_LIBRARY
+  WebP_webpdemux_LIBRARY
+  )
+
+mark_as_advanced(
+  WebP_INCLUDE_DIR
+  WebP_webp_LIBRARY
+  WebP_webpdecoder_LIBRARY
+  WebP_webpmux_LIBRARY
+  WebP_webpdemux_LIBRARY
+  )
 
 if (WEBP_FOUND OR WebP_FOUND)
   set(WebP_FOUND 1)
   set(WebP_INCLUDE_DIRS ${WebP_INCLUDE_DIR})
-  set(WebP_LIBRARIES "${WebP_LIBRARY}")
+  set(WebP_LIBRARIES ${WebP_webp_LIBRARY} ${WebP_webpdecoder_LIBRARY} ${WebP_webpmux_LIBRARY} ${WebP_webpdemux_LIBRARY})
 endif()
 
 if (WebP_FOUND AND NOT TARGET WebP::WebP)
   add_library(WebP::WebP INTERFACE IMPORTED)
-  set_property(TARGET WebP::WebP PROPERTY INTERFACE_INCLUDE_DIRECTORIES "${WebP_INCLUDE_DIR}")
-  set_property(TARGET WebP::WebP PROPERTY INTERFACE_LINK_LIBRARIES "${WebP_LIBRARY}")
+  set_property(TARGET WebP::WebP PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${WebP_INCLUDE_DIRS})
+  set_property(TARGET WebP::WebP PROPERTY INTERFACE_LINK_LIBRARIES ${WebP_LIBRARIES})
 endif ()
