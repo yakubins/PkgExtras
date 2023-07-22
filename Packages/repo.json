@@ -27,5 +27,11 @@
     "md5": "8144ef2ed6d434ec048d94f91acaa992",
     "src": "jbig2enc/0.29",
     "dst": ""
+  },
+  {
+    "url":[ "https://ftp.gnu.org/gnu/m4/m4-1.4.1.tar.gz" ],
+    "md5": "76984d94e85afb21caa88b5cc5aea0b3",
+    "src": "m4/1.4.1",
+    "dst": ""
   }
 ]
