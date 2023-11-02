@@ -100,7 +100,7 @@ set_target_properties(iff PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJ
 set_target_properties(iff PROPERTIES PREFIX "lib")
 set_property(TARGET iff PROPERTY POSITION_INDEPENDENT_CODE ON)
 
-add_library(LibIFF::LibIFF ALIAS iff)
+add_library(IFF::IFF ALIAS iff)
 
 
 set(iffpp_HEADERS
@@ -127,7 +127,7 @@ set(iffpp_DEFINITIONS
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${iffpp_HEADERS} ${iffpp_SOURCES})
 add_executable(iffpp ${iffpp_HEADERS} ${iffpp_SOURCES})
 target_compile_definitions(iffpp PRIVATE "${iffpp_DEFINITIONS}")
-target_link_libraries(iffpp PRIVATE LibIFF::LibIFF)
+target_link_libraries(iffpp PRIVATE IFF::IFF)
 
 
 set(iffjoin_HEADERS
@@ -154,7 +154,7 @@ set(iffjoin_DEFINITIONS
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${iffjoin_HEADERS} ${iffjoin_SOURCES})
 add_executable(iffjoin ${iffjoin_HEADERS} ${iffjoin_SOURCES})
 target_compile_definitions(iffjoin PRIVATE "${iffjoin_DEFINITIONS}")
-target_link_libraries(iffjoin PRIVATE LibIFF::LibIFF)
+target_link_libraries(iffjoin PRIVATE IFF::IFF)
 
 
 install(TARGETS iff iffpp iffjoin
