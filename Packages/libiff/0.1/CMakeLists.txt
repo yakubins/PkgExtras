@@ -12,6 +12,11 @@ set(libdir "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}")
 set(includedir "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_INCLUDEDIR}")
 
 check_include_file(getopt.h HAVE_GETOPT_H)
+if(HAVE_GETOPT_H)
+  set(HAVE_GETOPT_H 1)
+else ()
+  set(HAVE_GETOPT_H 0)
+endif ()
 
 set(iff_HEADERS
   src/libiff/cat.h
