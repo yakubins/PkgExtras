@@ -97,6 +97,7 @@ add_library(iff SHARED ${iff_HEADERS} ${iff_SOURCES} ${iff_DATAFILES})
 target_include_directories(iff PUBLIC "$<BUILD_INTERFACE:${iff_INCLUDES}>")
 target_compile_definitions(iff PRIVATE "${iff_DEFINITIONS}")
 set_target_properties(iff PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
+set_target_properties(iff PROPERTIES PREFIX "lib")
 set_property(TARGET iff PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 add_library(LibIFF::LibIFF ALIAS iff)
