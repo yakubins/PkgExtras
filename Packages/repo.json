@@ -6,7 +6,7 @@
     "dst": "icu-release-66-1/icu4c/source"
   },
   {
-    "url":[ "https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz" ],
+    "url": [ "https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz" ],
     "md5": "ebcf09bed9f14d7fa188d3bd57349522",
     "src": "jbigkit/2.1",
     "dst": ""
@@ -17,7 +17,7 @@
     "dst": ""
   },
   {
-    "url":[ "https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.zip" ],
+    "url": [ "https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.zip" ],
     "md5": "c1c1f36fdb691979d092d51679ba082e",
     "src": "jbig2dec/0.19",
     "dst": ""
@@ -29,9 +29,15 @@
     "dst": ""
   },
   {
-    "url":[ "https://ftp.gnu.org/gnu/m4/m4-1.4.1.tar.gz" ],
+    "url": [ "https://ftp.gnu.org/gnu/m4/m4-1.4.1.tar.gz" ],
     "md5": "76984d94e85afb21caa88b5cc5aea0b3",
     "src": "m4/1.4.1",
+    "dst": ""
+  },
+  {
+    "url": "https://github.com/svanderburg/libiff/archive/refs/heads/master.zip",
+    "md5": "b911f257ab495ceeb268dfc2571e1906",
+    "src": "libiff/0.1",
     "dst": ""
   }
 ]
