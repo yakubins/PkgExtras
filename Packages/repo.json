@@ -39,5 +39,11 @@
     "md5": "b911f257ab495ceeb268dfc2571e1906",
     "src": "libiff/0.1",
     "dst": ""
+  },
+  {
+    "url": "https://github.com/svanderburg/libilbm/archive/refs/heads/master.zip",
+    "md5": "4f907db22f136cf39d28a95143985207",
+    "src": "libilbm/0.1",
+    "dst": ""
   }
 ]
