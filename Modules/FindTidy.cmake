@@ -33,7 +33,7 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(Tidy DEFAULT_MSG Tidy_INCLUDE_DIR Tidy_LIBRARY
 mark_as_advanced(Tidy_INCLUDE_DIR Tidy_LIBRARY)
 
 if (Tidy_FOUND OR TIDY_FOUND)
-  set(Tidy_FOUND 1)
+  set(Tidy_FOUND TRUE)
   set(Tidy_INCLUDE_DIRS ${Tidy_INCLUDE_DIR})
   set(Tidy_LIBRARIES "${Tidy_LIBRARY}")
 endif()

@@ -24,7 +24,7 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(Archive DEFAULT_MSG Archive_INCLUDE_DIR Archiv
 mark_as_advanced(Archive_INCLUDE_DIR Archive_LIBRARY)
 
 if (Archive_FOUND OR ARCHIVE_FOUND)
-  set(Archive_FOUND 1)
+  set(Archive_FOUND TRUE)
   set(Archive_INCLUDE_DIRS ${Archive_INCLUDE_DIR})
   set(Archive_LIBRARIES "${Archive_LIBRARY}")
 endif()

@@ -53,7 +53,7 @@ if (NanoSVG_PACKAGE_HANDLE_STANDARD_ARGS)
 endif ()
 
 if (NANOSVG_FOUND OR NanoSVG_FOUND)
-  set(NanoSVG_FOUND 1)
+  set(NanoSVG_FOUND TRUE)
 endif()
 
 if (NanoSVG_FOUND AND NOT TARGET NanoSVG::NanoSVG)

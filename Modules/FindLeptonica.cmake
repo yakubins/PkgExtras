@@ -55,7 +55,7 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(Leptonica DEFAULT_MSG Leptonica_INCLUDE_DIR Le
 mark_as_advanced(Leptonica_INCLUDE_DIR Leptonica_LIBRARY)
 
 if (Leptonica_FOUND OR LEPTONICA_FOUND)
-  set(Leptonica_FOUND 1)
+  set(Leptonica_FOUND TRUE)
   set(Leptonica_INCLUDE_DIRS ${Leptonica_INCLUDE_DIR})
   set(Leptonica_LIBRARIES "${Leptonica_LIBRARY}")
 endif()

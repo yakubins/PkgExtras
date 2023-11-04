@@ -66,7 +66,7 @@ mark_as_advanced(
   )
 
 if (WEBP_FOUND OR WebP_FOUND)
-  set(WebP_FOUND 1)
+  set(WebP_FOUND TRUE)
   set(WebP_INCLUDE_DIRS ${WebP_INCLUDE_DIR})
   set(WebP_LIBRARIES ${WebP_webp_LIBRARY} ${WebP_webpdecoder_LIBRARY} ${WebP_webpmux_LIBRARY} ${WebP_webpdemux_LIBRARY})
 endif()
