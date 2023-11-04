@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(libilbm VERSION 0.1 LANGUAGES C)
+project(libilbm VERSION 0.1 DESCRIPTION "EA-85 ILBM parser library" LANGUAGES C)
 
 include(GNUInstallDirs)
 include(CheckIncludeFile)
@@ -103,7 +103,7 @@ set(ilbm_LIBRARIES
   )
 
 set(ilbm_DEFINITIONS
-  LIBilbm_EXPORTS
+  LIBILBM_EXPORTS
   )
 
 if (WIN32)
