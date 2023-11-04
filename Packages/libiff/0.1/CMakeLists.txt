@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(libiff VERSION 0.1 LANGUAGES C)
+project(libiff VERSION 0.1 DESCRIPTION "EA-85 IFF parser library" LANGUAGES C)
 
 include(GNUInstallDirs)
 include(CheckIncludeFile)
