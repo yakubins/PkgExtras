@@ -45,5 +45,11 @@
     "md5": "4f907db22f136cf39d28a95143985207",
     "src": "libilbm/0.1",
     "dst": ""
+  },
+  {
+    "url": "https://github.com/svanderburg/libamivideo/archive/refs/heads/master.zip",
+    "md5": "057f417a329a1a19d1cb87412f1c7ec7",
+    "src": "libamivideo/0.1",
+    "dst": ""
   }
 ]
